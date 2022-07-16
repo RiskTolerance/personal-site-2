@@ -28,6 +28,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sanity/client": "^3.3.2"
+		"@sanity/client": "^3.3.2",
+		"animejs": "^3.2.1"
 	}
 }

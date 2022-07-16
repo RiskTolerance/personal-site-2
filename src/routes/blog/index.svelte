@@ -2,4 +2,49 @@
   import PageTitle from '$lib/components/PageTitle.svelte'
 </script>
 
-<PageTitle title="Blog"/>
+<PageTitle title="Blog" subtitles={['Thoughts and things.']}/>
+
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>

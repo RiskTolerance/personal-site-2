@@ -1,6 +1,6 @@
 <svg
 		xmlns="http://www.w3.org/2000/svg"
-		class="w-24"
+		class="w-16 lg:w-24"
 		viewBox="0 0 169.49 169.49"
 	>
 		<g fill="#dfa926">
