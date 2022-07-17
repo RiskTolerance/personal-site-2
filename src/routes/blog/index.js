@@ -10,7 +10,6 @@ export async function GET() {
 		name
 		}
 	}`);
-	console.log(data);
 	if (data) {
 		return {
 			status: 200,

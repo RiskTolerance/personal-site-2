@@ -20,7 +20,7 @@
 			</a>
 		{:else}
 			<div class="w-16 min-w-[1rem] h-3 bg-white hidden lg:block" />
-			<h3 class="lg:whitespace-nowrap">{subtitle.title}</h3>
+			<h3 class="lg:whitespace-nowrap">{subtitle}</h3>
 		{/if}
 	{/each}
 	<div class="w-full h-3 bg-white hidden lg:block" />

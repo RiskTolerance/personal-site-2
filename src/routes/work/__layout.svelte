@@ -18,3 +18,5 @@
 </script>
 
 <PageTitle title="Work" subtitles={subLinks} />
+
+<slot />
