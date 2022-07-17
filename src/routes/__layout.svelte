@@ -2,9 +2,9 @@
 	import '../app.css';
 	import Nav from '$lib/components/Nav.svelte';
 	import { page } from '$app/stores';
-	let innerWidth;
 	let path;
 	$: path = $page.url.pathname;
+	let innerWidth;
 </script>
 
 <svelte:window bind:innerWidth />

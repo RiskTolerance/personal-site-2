@@ -1,6 +1,5 @@
 <script>
 	import PageTitle from '$lib/components/PageTitle.svelte';
-	import { PortableText } from '@portabletext/svelte';
 	let posts = $$props.posts;
 </script>
 

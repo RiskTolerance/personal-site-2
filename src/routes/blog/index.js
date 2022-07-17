@@ -1,7 +1,15 @@
-import client from '../../lib/sanityClient';
+import client from '$lib/sanityClient';
 
 export async function GET() {
-	const data = await client.fetch(`*[_type == 'post']{title,slug,author,publishedAt,body}`);
+	const data = await client.fetch(`*[_type == 'post']{
+		title,
+		slug,
+		publishedAt,
+		body,
+		author -> {
+		name
+		}
+	}`);
 	console.log(data);
 	if (data) {
 		return {
