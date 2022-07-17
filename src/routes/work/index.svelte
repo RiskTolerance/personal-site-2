@@ -1,7 +1,8 @@
-<script>
-	import { goto } from '$app/navigation';
-	import { onMount } from 'svelte';
-	onMount(async () => {
-		goto('/work/graphic-design');
-	});
+<script context="module">
+	export async function load() {
+		return {
+			status: 301,
+			redirect: '/work/graphic-design'
+		};
+	}
 </script>

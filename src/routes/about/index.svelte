@@ -1,5 +1,10 @@
 <script>
-	import PageTitle from '$lib/components/PageTitle.svelte';
 </script>
 
-<PageTitle title="About" subtitles={['me!']} />
+<svelte:head>
+	<title>Isaac Druin | About</title>
+	<meta name="About" content="Meta description goes here!" />
+	<html lang="en" />
+</svelte:head>
+
+<p>hey</p>

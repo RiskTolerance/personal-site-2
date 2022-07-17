@@ -4,13 +4,17 @@
 	body {
 		@apply bg-appGrey;
 	}
-	h1 {
-		@apply font-serif text-white text-6xl lg:text-8xl;
+	.pageTitle {
+		@apply font-serif text-white text-6xl md:text-7xl lg:text-8xl;
 	}
-	h2,
-	h3,
-	h4 {
+	.pageSubtitle {
+		@apply font-sans text-white text-base md:text-lg lg:text-xl;
+	}
+	h2 {
 		@apply font-sans text-white text-xl lg:text-2xl;
+	}
+	a {
+		@apply font-sans font-bold;
 	}
 }
 
