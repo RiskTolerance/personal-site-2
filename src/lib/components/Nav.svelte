@@ -29,9 +29,9 @@
     </a>
     <ul class="flex space-x-40 items-center text-xl decoration-2 underline-offset-4 transition-all duration-100">
       <a class="{path === "/about" ? "text-appOrange underline " : "text-white"} hover:text-appOrange" href="/about">About</a>
+      <a class="{path === "/work" ? "text-appOrange underline" : "text-white"} hover:text-appOrange" href="/work">Work</a>
       <a class="{path === "/blog" ? "text-appOrange underline" : "text-white"} hover:text-appOrange" href="/blog">Blog</a>
       <a class="{path === "/contact" ? "text-appOrange underline" : "text-white"} hover:text-appOrange" href="/contact">Contact</a>
-      <a class="{path === "/work" ? "text-appOrange underline" : "text-white"} hover:text-appOrange" href="/work">Work</a>
     </ul>
   </nav>
 {/if}

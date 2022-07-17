@@ -1,5 +1,5 @@
 <script>
-  import PageTitle from '$lib/components/PageTitle.svelte'
+	import PageTitle from '$lib/components/PageTitle.svelte';
 </script>
 
-<PageTitle title="Contact" subtitles={["Get in touch with me!"]}/>
+<PageTitle title="Contact" subtitles={['Get in touch with me!']} />
