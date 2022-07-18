@@ -12,6 +12,7 @@
 <Nav />
 
 <div class="flex flex-col lg:flex-row width--transition">
+	<!-- TODO: look into dbounce -->
 	{#if innerWidth > 1024}
 		<div
 			class="{path === '/'

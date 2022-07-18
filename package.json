@@ -29,6 +29,7 @@
 	"type": "module",
 	"dependencies": {
 		"@sanity/client": "^3.3.2",
-		"animejs": "^3.2.1"
+		"animejs": "^3.2.1",
+		"vanilla-tilt": "^1.7.2"
 	}
 }
