@@ -30,6 +30,7 @@
 	"type": "module",
 	"dependencies": {
 		"@sanity/client": "^3.3.2",
+		"@sanity/image-url": "^1.0.1",
 		"animejs": "^3.2.1",
 		"vanilla-tilt": "^1.7.2"
 	}

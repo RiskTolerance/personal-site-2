@@ -1,7 +1,14 @@
 <script>
 	import { onMount } from 'svelte';
 	import VanillaTilt from '../../../node_modules/vanilla-tilt/src/vanilla-tilt';
+	import client from '@sanity/client';
+	import imgUrlBuilder from '@sanity/image-url';
 	export let posts;
+
+	const builder = imgUrlBuilder(client);
+	function urlFor(source) {
+		return builder.image(source);
+	}
 
 	onMount(async () => {
 		VanillaTilt.init(document.querySelectorAll('.blog-block'), {
@@ -23,7 +30,9 @@
 				><div class="flex w-full  aspect-w-1 aspect-h-1">
 					<div
 						style="transform-style: preserve-3d; transform: perspective(1000px)"
-						class="flex items-center justify-center p-12 blog-block bg-white"
+						class="flex items-center justify-center p-12 blog-block {post.mainImage?.URL
+							? `bg-green-400`
+							: 'bg-red-500'}"
 					>
 						<p style="transform: translateZ(20px);">{post.title}</p>
 					</div>
