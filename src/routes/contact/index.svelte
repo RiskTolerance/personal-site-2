@@ -4,4 +4,5 @@
 	<html lang="en" />
 </svelte:head>
 
+<div class="icon-menu" />
 <p>hey</p>
