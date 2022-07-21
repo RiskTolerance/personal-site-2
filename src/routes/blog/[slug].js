@@ -9,7 +9,7 @@ export async function GET({ params: { slug } }) {
       },
       publishedAt,
       body}`);
-
+	console.log(post);
 	if (post) {
 		return {
 			status: 200,

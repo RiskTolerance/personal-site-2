@@ -6,11 +6,13 @@
 	export let posts;
 
 	const builder = imgUrlBuilder(client);
+
 	function urlFor(source) {
 		return builder.image(source);
 	}
 
 	onMount(async () => {
+		console.log(posts);
 		VanillaTilt.init(document.querySelectorAll('.blog-block'), {
 			reverse: true,
 			max: 10,
@@ -30,10 +32,20 @@
 				><div class="flex w-full  aspect-w-1 aspect-h-1">
 					<div
 						style="transform-style: preserve-3d; transform: perspective(1000px)"
-						class="flex items-center justify-center p-12 blog-block {post.mainImage?.URL
-							? `bg-green-400`
-							: 'bg-red-500'}"
+						class="flex items-center justify-center p-12 blog-block"
 					>
+						{#if post.image && post.image.asset && post.image.asset._ref}
+							{#await urlFor(post.image.asset._ref).url()}
+								<p>loading</p>
+							{:then value}
+								<!-- <img src={value} alt="" /> -->
+								<p>{value}</p>
+							{:catch error}
+								<p>no 2</p>
+							{/await}
+						{:else}
+							<p>no</p>
+						{/if}
 						<p style="transform: translateZ(20px);">{post.title}</p>
 					</div>
 				</div></a

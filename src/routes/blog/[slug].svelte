@@ -1,5 +1,6 @@
 <script>
 	import { PortableText } from '@portabletext/svelte';
+	import Image from '$lib/components/Image.svelte';
 	let post = $$props.post;
 </script>
 
@@ -13,4 +14,11 @@
 	})}
 </h4>
 
-<PortableText value={post.body} />
+<PortableText
+	value={post.body}
+	components={{
+		types: {
+			image: Image
+		}
+	}}
+/>

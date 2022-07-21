@@ -1,6 +1,8 @@
 <script>
 	import BlogGrid from '$lib/components/BlogGrid.svelte';
+	import { onMount } from 'svelte';
 	let posts = $$props.posts;
+	onMount(() => console.log(posts[1].image.asset._ref));
 </script>
 
 <svelte:head>

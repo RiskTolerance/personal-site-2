@@ -6,14 +6,12 @@ export async function GET() {
 		slug,
 		publishedAt,
 		body,
-		mainImage{
-			"URL": asset->url
-		},
+		"image": mainImage,
 		author -> {
 		name
 		}
 	}`);
-	console.log(data);
+
 	if (data) {
 		return {
 			status: 200,
