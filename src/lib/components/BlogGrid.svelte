@@ -1,15 +1,8 @@
 <script>
 	import { onMount } from 'svelte';
 	import VanillaTilt from '../../../node_modules/vanilla-tilt/src/vanilla-tilt';
-	import client from '@sanity/client';
-	import imgUrlBuilder from '@sanity/image-url';
+	import { urlFor } from '../sanityClient';
 	export let posts;
-
-	const builder = imgUrlBuilder(client);
-
-	function urlFor(source) {
-		return builder.image(source);
-	}
 
 	onMount(async () => {
 		console.log(posts);
@@ -25,28 +18,31 @@
 
 {#if posts && posts.length}
 	<div
-		class=" w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4  auto-rows-auto gap-8 bg-gray-700"
+		class=" w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4  auto-rows-auto gap-8"
 	>
 		{#each posts as post}
 			<a href={`/blog/${post.slug.current}`} class="w-full"
 				><div class="flex w-full  aspect-w-1 aspect-h-1">
 					<div
 						style="transform-style: preserve-3d; transform: perspective(1000px)"
-						class="flex items-center justify-center p-12 blog-block"
+						class="flex items-center justify-center p-12 blog-block bg-black"
 					>
-						{#if post.image && post.image.asset && post.image.asset._ref}
-							{#await urlFor(post.image.asset._ref).url()}
+						{#if post.image}
+							{#await urlFor(post.image).height(500).url()}
 								<p>loading</p>
 							{:then value}
 								<!-- <img src={value} alt="" /> -->
-								<p>{value}</p>
+								<img
+									class="absolute h-full object-cover -z-20 overflow-clip"
+									loading="lazy"
+									src={value}
+									alt=""
+								/>
 							{:catch error}
 								<p>no 2</p>
 							{/await}
-						{:else}
-							<p>no</p>
 						{/if}
-						<p style="transform: translateZ(20px);">{post.title}</p>
+						<h2 class="text-white font-black" style="transform: translateZ(20px);">{post.title}</h2>
 					</div>
 				</div></a
 			>

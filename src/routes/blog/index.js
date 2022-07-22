@@ -6,7 +6,7 @@ export async function GET() {
 		slug,
 		publishedAt,
 		body,
-		"image": mainImage,
+		"image": mainImage.asset -> url,
 		author -> {
 		name
 		}
