@@ -32,6 +32,6 @@
 
 <style>
 	.mainbg {
-		background-image: url(../lib/bg/0.webp);
+		background-image: url(../lib/bg/1.webp);
 	}
 </style>

@@ -5,13 +5,13 @@ export async function GET() {
 		title,
 		slug,
 		publishedAt,
-		body,
 		"image": mainImage.asset -> url,
+		"blurHash": mainImage.asset -> metadata.blurHash,
 		author -> {
-		name
+			name
 		}
 	}`);
-
+	console.log(data);
 	if (data) {
 		return {
 			status: 200,
