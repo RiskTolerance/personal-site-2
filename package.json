@@ -32,6 +32,7 @@
 		"@sanity/client": "^3.3.2",
 		"@sanity/image-url": "^1.0.1",
 		"animejs": "^3.2.1",
+		"blurhash": "^1.1.5",
 		"vanilla-tilt": "^1.7.2"
 	}
 }

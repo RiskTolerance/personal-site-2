@@ -6,7 +6,7 @@ export async function GET() {
 		slug,
 		publishedAt,
 		"image": mainImage.asset -> url,
-		"blurHash": mainImage.asset -> metadata.blurHash,
+		"lqip": mainImage.asset -> metadata.lqip,
 		author -> {
 			name
 		}
