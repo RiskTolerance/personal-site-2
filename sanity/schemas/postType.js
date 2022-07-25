@@ -1,6 +1,6 @@
 export default {
-	name: 'category',
-	title: 'Category',
+	name: 'postType',
+	title: 'Post Type',
 	type: 'document',
 	fields: [
 		{
