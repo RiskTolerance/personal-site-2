@@ -1,0 +1,3 @@
+<script>
+    // a simple button to consider as an alternitive/sidekick to breadcrumbs... 
+</script>

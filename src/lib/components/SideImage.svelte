@@ -1,0 +1,3 @@
+<script>
+    // since the side-image will be visiable on each page as part of a master layout, I'm not actually sure turning it into a component will be any easier than just passing state through a store...
+</script>
