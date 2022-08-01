@@ -11,7 +11,7 @@ export async function GET() {
 			name
 		}
 	}`);
-	console.log(data);
+	// console.log(data);
 	if (data) {
 		return {
 			status: 200,

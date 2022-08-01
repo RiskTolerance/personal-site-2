@@ -1,6 +1,6 @@
 <script>
 	import { PortableText } from '@portabletext/svelte';
-	import Image from '$lib/components/Image.svelte';
+	import Image from '$lib/components/portableText/Image.svelte';
 	let post = $$props.post;
 </script>
 

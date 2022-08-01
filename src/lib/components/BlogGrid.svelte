@@ -2,10 +2,10 @@
 	import { onMount } from 'svelte';
 	import VanillaTilt from '../../../node_modules/vanilla-tilt/src/vanilla-tilt';
 	import BlogGridCard from './BlogGridCard.svelte';
+
 	export let posts;
 
 	onMount(async () => {
-		console.log(posts);
 		VanillaTilt.init(document.querySelectorAll('.tilt-item'), {
 			reverse: true,
 			max: 10,
