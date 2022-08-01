@@ -1,7 +1,7 @@
 <script>
 	import { PortableText } from '@portabletext/svelte';
 	import Image from '$lib/components/portableText/Image.svelte';
-	let post = $$props.post;
+	export let post;
 </script>
 
 <h2>{post.title}</h2>

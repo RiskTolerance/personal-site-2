@@ -2,19 +2,24 @@
 	import { onMount } from 'svelte';
 	import { urlFor } from '../../sanityClient';
 	export let portableText;
-	let image = portableText.value.asset;
+
+	console.log(portableText.value);
+	let image;
 	let imageLoaded = false;
 
 	onMount(() => {
 		if (image) {
 			image.onload = () => {
-				console.log(image);
 				imageLoaded = true;
 			};
 		}
 	});
 </script>
 
-<div>
-	<h1>this is an image</h1>
-</div>
+{#await urlFor(portableText.value.asset).height(1000).url()}
+	<p>loading...</p>
+{:then src}
+	<img bind:this={image} {src} alt="" />
+{:catch error}
+	<p>image failed to load</p>
+{/await}

@@ -1,6 +1,5 @@
 <script>
 	import { onMount } from 'svelte';
-
 	import { urlFor } from '../sanityClient';
 	export let post;
 

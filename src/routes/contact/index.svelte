@@ -1,8 +1,11 @@
+<script>
+	import ContactForm from '$lib/components/ContactForm.svelte';
+</script>
+
 <svelte:head>
-	<title>Isaac Druin | Home</title>
-	<meta name="Home" content="Meta description goes here!" />
+	<title>Isaac Druin | Contact</title>
+	<meta name="Contact" content="Meta description goes here!" />
 	<html lang="en" />
 </svelte:head>
 
-<i class="icon-menu" />
-<p>hey</p>
+<ContactForm />
